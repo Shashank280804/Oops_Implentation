@@ -1,8 +1,9 @@
-//COMPILE-TIME POLYMORPHISM
-#include<iostream>
-using namespace std;
-class Vehicle{
-    public:
-    int speed;
-    
-};
+/*
+Operator that cannot be overloaded are as follows:
+
+Scope operator (::)
+Sizeof
+member selector(.)
+member pointer selector(*)
+ternary operator(?:)
+*/

@@ -1,27 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Vehicle{
-  public:
+class Vehicle
+{
+public:
+  virtual void start() = 0;
 
-  virtual void start()=0;
-
-  void stop(){
-    cout<<"The vehicle has stopped "<<endl;
+  void stop()
+  {
+    cout << "The vehicle has stopped " << endl;
   }
 };
 
-class Car: public Vehicle{
-    public:
-        void start() override{
-              cout<<"The car is starting!!"<<endl;
-        }
-
+class Car : public Vehicle
+{
+public:
+  void start() override
+  {
+    cout << "The car is starting!!" << endl;
+  }
 };
 
-int main(){
-    Car myCar;
-    myCar.start();
-    myCar.stop();
-    return 0;
+int main()
+{
+  Car myCar;
+  myCar.start();
+  myCar.stop();
+  return 0;
 }

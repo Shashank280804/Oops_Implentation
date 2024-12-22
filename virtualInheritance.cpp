@@ -1,3 +1,6 @@
+//Solution to Diamond problem that is virtual inheritance
+
+
 #include <iostream>
 using namespace std;
 

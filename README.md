@@ -85,3 +85,7 @@ A class that contains at least one pure virtual function, serving as a blueprint
 
 ### Real-World Example:
 A "shape" class with a pure virtual method area() implemented differently in derived classes like circle and rectangle.
+
+## Diamond Problem
+The Diamond Problem (also known as the Deadly Diamond of Death) is a problem that occurs in object-oriented programming languages that support multiple inheritance, such as C++. It arises when a class inherits from two classes that both inherit from a common base class.
+In such cases, there can be ambiguity about which version of the base class methods or properties should be inherited by the derived class. This situation forms a diamond shape in the class hierarchy, where a class inherits from two classes that share a common ancestor.

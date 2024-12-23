@@ -18,7 +18,7 @@ public:
 class Car {
 public:
     // A member function that can access Vehicle's private members
-    void showVehicleSpeed(Vehicle& v) {
+    void showVehicleSpeed(Vehicle v) {
         cout << "The speed of the vehicle is " << v.speed << " km/h" << endl;
     }
 };

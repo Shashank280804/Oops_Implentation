@@ -12,11 +12,11 @@ public:
     }
 
     // Friend function declaration
-    friend void showSpeed(Vehicle& v);
+    friend void showSpeed(Vehicle v);
 };
 
 // Friend function definition
-void showSpeed(Vehicle& v) {
+void showSpeed(Vehicle v) {
     // Accessing private member
     cout << "The speed of the vehicle is " << v.speed << " km/h" << endl;
 }
